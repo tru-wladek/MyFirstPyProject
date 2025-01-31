@@ -14,3 +14,8 @@ Now, anyone who has the same problem can just run this script and let it do the 
 1. Install dependencies:  
    ```sh
    pip install requests
+
+## Future Improvements
+- Export results to a CSV file
+- Multi-threading for faster link checking
+- Handling CAPTCHA-protected sites
