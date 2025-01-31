@@ -3,7 +3,6 @@ import requests
 
 
 def extract_links(text):
-    """Extracts all URLs from a given text using regex."""
     url_pattern = r"https?://[^\s]+"
     return re.findall(url_pattern, text)
 
@@ -17,10 +16,11 @@ def check_link_status(url):
     except requests.exceptions.RequestException:
         return "Error"
 
+
 def read_text_file(file_path):
-    """Reads the content of a text file and returns it as a string."""
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
+
 
 def main():
     file_path = "/Users/user/Desktop/links_to_check.txt"
